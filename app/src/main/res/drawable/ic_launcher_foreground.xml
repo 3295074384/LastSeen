@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    LastSeen launcher icon — foreground layer.
+    Ported from logo.svg (512 viewport → 108 viewport, factor ≈ 0.2109).
+
+    Elements:
+      ① Outer radar arc   — dashed sweep (strokeDashArray mirrors SVG stroke-dasharray)
+      ② Middle radar arc   — dashed sweep
+      ③ Inner radar arc    — solid stroke
+      ④ Location pin       — filled white teardrop
+      ⑤ Pin center dot     — brand blue #1C7EC4
+      ⑥ Trailing arc       — curved connector
+      ⑦-⑧ Particle dots    — trailing scatter dots
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- ① Outer radar arc: r=29.5, dashed sweep (SVG dasharray 140 30 70 40 → scaled) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.8"
+        android:strokeLineCap="round"
+        android:strokeDashArray="29.5,6.3,14.8,8.4"
+        android:fillColor="#00000000"
+        android:pathData="M27.4,65.4 A29.5,29.5 0 1,1 78.0,68.5" />
+
+    <!-- ② Middle radar arc: r=21.1, dashed sweep (SVG dasharray 180 35 → scaled) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.8"
+        android:strokeLineCap="round"
+        android:strokeDashArray="38.0,7.4"
+        android:fillColor="#00000000"
+        android:pathData="M35.8,61.2 A21.1,21.1 0 1,1 70.9,62.2" />
+
+    <!-- ③ Inner radar arc: r=11.8, solid (no dasharray in source SVG) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.4"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M44.7,56.9 A11.8,11.8 0 1,1 63.3,56.9" />
+
+    <!-- ④ Location pin: white teardrop body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,40.1
+            C47.5,40.1 42.2,45.4 42.2,51.9
+            C42.2,60.1 54,72.8 54,72.8
+            C54,72.8 65.8,60.1 65.8,51.9
+            C65.8,45.4 60.5,40.1 54,40.1Z" />
+
+    <!-- ⑤ Pin center dot: brand blue #1C7EC4, r≈3.4 -->
+    <path
+        android:fillColor="#1C7EC4"
+        android:pathData="M54,51.1
+            C57.5,51.1 60.3,48.3 60.3,44.8
+            C60.3,41.3 57.5,38.5 54,38.5
+            C50.5,38.5 47.7,41.3 47.7,44.8
+            C47.7,48.3 50.5,51.1 54,51.1Z" />
+
+    <!-- ⑥ Trailing arc: curved connector line -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M75.9,80.2 Q79.0,82.3 83.3,79.1" />
+
+    <!-- ⑦ Trailing dot 1: r≈1.9 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M73.8,83.3
+            C74.8,83.3 75.6,82.5 75.6,81.5
+            C75.6,80.5 74.8,79.7 73.8,79.7
+            C72.8,79.7 72.0,80.5 72.0,81.5
+            C72.0,82.5 72.8,83.3 73.8,83.3Z" />
+
+    <!-- ⑧ Trailing dot 2: r≈1.5 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M68.5,85.4
+            C69.3,85.4 70.0,84.7 70.0,83.9
+            C70.0,83.1 69.3,82.4 68.5,82.4
+            C67.7,82.4 67.0,83.1 67.0,83.9
+            C67.0,84.7 67.7,85.4 68.5,85.4Z" />
+
+</vector>
