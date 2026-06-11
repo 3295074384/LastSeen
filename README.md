@@ -153,6 +153,9 @@ WhitelistManager.add(this, "你的设备MAC地址")
 - **HyperOS 适配** — 小米系统后台管控激进，需手动关闭电池优化并开启自启动
 - **Hilt 未集成** — AGP 9.x 与 Hilt 2.56.2 存在 `BaseExtension` 兼容性问题，当前使用手动 DI
 
+## 鸣谢
+感谢狗老师提供的logo设计
+
 ## License
 
 MIT
